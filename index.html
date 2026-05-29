@@ -5,12 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usando CSS</title>
+    <!-- Forma 2 - CSS Interno - Ainda mistura camadas, HTML com CSS, não é o ideal, mas já soluciona a questão de repetição de código -->
+    <style>
+        h2 {
+            color:blueviolet;
+        }
+    </style>
+    <!-- Forma 3 - Criar uma pasta CSS com as folhas de estilos e importo elas para o HTML, através de um Link -->
+     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
-    <h1>Usando CSS em minha página</h1>
-    <h2>CSS é maravilhoso</h2>
-    <p>
+<body> <!-- body(pai) e h1, h2, p (filhos do body) herdam algumas formatações do elemento pai -->
+    <!-- Forma 1 - CSS Inline - comum em código legado - NÃO RECOMENDADO -->
+     <!-- Título principal -->
+    <h1 style="color: forestgreen;">Forma 1 - Usando CSS em minha página</h1>
+
+    <!-- Sub-título -->
+    <h2>Forma 2 - CSS Interno</h2>
+
+    <!-- Parágrafo -->
+    <p> 
+        Forma 3 - Link CSS <br>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nihil, labore id facilis aliquam nobis ducimus
         debitis rerum sint praesentium laudantium repellendus repudiandae et soluta molestiae, in voluptatibus error
         tempore.
