@@ -1,26 +1,51 @@
-/* 
-    Atenção ao efeito cascata, especificidade e herança
-    cascata -> É aplicado o último valor atribuido ao mesmo elemento
-    especificidade -> 
-        Element, Pseudo Element: d = 1 – (0,0,0,1)
-        Class, Pseudo class, Attribute: c = 1 – (0,0,1,0)
-        Id: b = 1 – (0,1,0,0)
-        Inline Style: a = 1 – (1,0,0,0)
-    herança ->
-        se eu definir color e font-family em um elemento, 
-        todos os elementos dentro dele também serão estilizados com essa cor e fonte.
-        obs: herança é quebrada pelo efeito cascata
-*/
-/* p {} -> Seletor p (elemento html) */
-/* propriedade : valor */
-
-/* Formata o corpo da página*/
 body {
-    color: red;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: gray;
 }
 
-/* Formata o parágrafo */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: crimson;
+}
+
+h2 {
+    font-size: 24px;
+    color: crimson;
+}
+
 p {
-    color: blue;
-    font-size: 18px;
+    text-indent: 32px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+ol {
+    line-height: 1.8;
+    text-align: left;
+}
+
+ul {
+    line-height: 1.8;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+li {
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+a {
+    font-weight: bold;
+    color: midnightblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
 }
