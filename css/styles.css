@@ -20,37 +20,69 @@
 }
 
 :root {
-    --font-body: Lato-regular;
-    --font-title: PlayfairDisplay-Regular;
-    --font-20: 20px;
-    --font-30: 30px;
-    --color-pink: #dc143c;
-    --color-dark: #666666;
-    --weight-500: 500;
-    --weight-600: 600;
-    --weight-700: 700;
+    --font-body: Lato-Regular;
+    --font-title: PlayfairDisplay-Bold;
 }
+
+@property --color-blue {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #369eff;
+}
+
+@property --color-gray {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #868686;
+}
+
+@property --font-25 {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 25px;
+}
+
+@property --weigth-600 {
+    syntax: "<integer>";
+    inherits: true;
+    initial-value: 600;
+}
+
 body {
     font-family: var(--font-body, monospace);
     color: var(--color-dark);
 }
+
 h1 {
     font-family: var(--font-title);
-    font-size: var(--font-30);
-    color: var(--color-pink);
-    font-weight: var(--weight-700);
+    font-size: var(--font-25);
+    color: var(--color-blue);
 }
+
 p {
-    font-size: var(--font-20);
-    font-weight: var(--weight-500);
-    color: var(--color-dark);
+    color: var(--color-gray);
+    font-weight: var(--weigth-600);
     margin-bottom: 30px;
 }
+
+.container1 {
+    background-color: var(--color-blue); /*usando a variável global*/
+    width: 400px;
+    height: 100px;
+}
+
+.container2 {
+    --color-blue: rgb(117, 149, 255); /*usando a variável local*/
+    background-color: var(--color-blue);
+    max-width: 700px;
+    min-height: 300px;
+}
+
 a {
-    font-size: var(--font-20);
-    color: var(--color-pink);
-    font-weight: var(--weight-600);
+    color: var(--color-blue);
     text-decoration: none;
+    font-weight: var(--weigth-600);
+
     &:hover {
         color: var(--color-dark);
         text-decoration: underline;
