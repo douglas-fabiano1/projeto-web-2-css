@@ -1,51 +1,58 @@
+/* Import da fonte */
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url(../fonts/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay-Regular;
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+:root {
+    --font-body: Lato-regular;
+    --font-title: PlayfairDisplay-Regular;
+    --font-20: 20px;
+    --font-30: 30px;
+    --color-pink: #dc143c;
+    --color-dark: #666666;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+}
 body {
-    font-family: Calibri, sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    color: gray;
+    font-family: var(--font-body, monospace);
+    color: var(--color-dark);
 }
-
 h1 {
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: crimson;
+    font-family: var(--font-title);
+    font-size: var(--font-30);
+    color: var(--color-pink);
+    font-weight: var(--weight-700);
 }
-
-h2 {
-    font-size: 24px;
-    color: crimson;
-}
-
 p {
-    text-indent: 32px;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-    text-align: justify;
+    font-size: var(--font-20);
+    font-weight: var(--weight-500);
+    color: var(--color-dark);
+    margin-bottom: 30px;
 }
-
-ol {
-    line-height: 1.8;
-    text-align: left;
-}
-
-ul {
-    line-height: 1.8;
-    text-align: left;
-    text-transform: capitalize;
-}
-
-li {
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
 a {
-    font-weight: bold;
-    color: midnightblue;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: underline;
+    font-size: var(--font-20);
+    color: var(--color-pink);
+    font-weight: var(--weight-600);
+    text-decoration: none;
+    &:hover {
+        color: var(--color-dark);
+        text-decoration: underline;
+    }
 }
