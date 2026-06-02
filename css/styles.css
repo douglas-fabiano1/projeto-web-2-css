@@ -12,16 +12,11 @@ body {
 }
 
 h1 {
-    text-align: center;
     color: var(--color-light);
 }
 
-.images {
-    text-align: center;
-}
-
 img {
-    display: inline;
-    width: 360px;
+    display: block;
+    width: 120px;
     border-radius: 7px;
 }
