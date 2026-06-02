@@ -1,3 +1,10 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --font-body: Quicksand;
     --color-light: #fcfcfc;
@@ -5,7 +12,7 @@
 }
 
 body {
-    font-family: var(--font-body, monospace);
+    font-family: var(--font-body);
     background-color: var(--color-slate-900);
     align-content: center;
     height: 95vh;
@@ -16,7 +23,18 @@ h1 {
 }
 
 img {
-    display: block;
+    display: inline;
     width: 120px;
     border-radius: 7px;
+}
+
+.container {
+    width: 200px;
+
+    margin: 30px;
+
+    border: 10px solid paleturquoise;
+    border-radius: 10px;
+
+    padding: 20px;
 }
