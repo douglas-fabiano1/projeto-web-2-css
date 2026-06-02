@@ -1,51 +1,56 @@
-:root {
-    --font-text: "Montserrat", sans-serif;
-    --color-brow-200: #c88219;
-    --color-brow-800: rgb(42, 27, 4);
-    --color-light: #f4f4f4;
-}
-/* reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-text);
 }
-/* hero */
-.hero {
-    width: 100%;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)),
-    url(../images/pexels-babydov-7787873.jpg);
-    background-size: cover;
-    background-position: right;
-    align-content: center;
+
+:root {
+    --font-body: Montserrat;
+    --color-blue-400: #907ad6;
+    --color-blue-600: #4f518c;
+    --color-blue-900: #2c2a4a;
+}
+
+body {
+    font-family: var(--font-body);
     text-align: center;
-    padding: 0 30px;
-    color: var(--color-light);
+    padding: 20px;
+    color: var(--color-blue-900);
 }
-.hero-title {
-    font-size: 9vmin;
-    text-wrap: balance;
-    margin: 30px 0;
+
+header,
+main,
+article,
+section,
+figure,
+figcaption,
+footer {
+    /* container */
+    padding: 1rem;
+    margin-block: 1rem;
+    /*margem superior e inferior*/
+    border: 1px solid var(--color-blue-600);
 }
-.hero-text {
-    font-size: 3vmin;
-    width: 70%;
-    text-wrap: balance;
-    line-height: 1.6;
-    margin: 30px auto 50px;
+
+nav {
+    border: 1px solid var(--color-blue-400);
 }
-.btn {
-    width: 200px;
-    color: var(--color-brow-200);
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: var(--color-blue-600);
     text-decoration: none;
-    border: 1px solid var(--color-brow-200);
-    padding: 10px 30px;
-    letter-spacing: 1px;
-    border-radius: 70px;
-    font-weight: 600;
+    font-weight: 800;
 }
-.btn:hover {
-    background-color: var(--color-brow-800);
+
+section {
+    border-color: var(--color-blue-400);
+}
+
+img {
+    max-width: 300px;
 }

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background-image</title>
+    <title>HTML Semântico</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,12 +12,62 @@
     <!-- chamada do CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <div class="hero">
-        <h1 class="hero-title">Liberdade em cada curva</h1>
-        <p class="hero-text">Viva a emoção de conquistar a estrada com a potência e estilo incomparáveis da Harley Davidson.
+    <!-- cabeçalho -->
+    <header>
+        <h1>Header - Nome do projeto</h1>
+        <!-- menu principal -->
+        <nav>
+            <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- conteúdo principal -->
+    <main>
+        <h2>Main</h2>
+        <article>
+            <h3>article 01</h3>
+            <section>section 01</section>
+            <section>section 02</section>
+            <section>section 03</section>
+            <section>section 04</section>
+        </article>
+
+        <article>
+            <h3>article 02</h3>
+            <section>section 01</section>
+            <section>section 02</section>
+            <section>section 03</section>
+        </article>
+
+        <!-- Figure -->
+        <figure>
+            <h3>figure</h3>
+            <img src="./images/pexels-eberhardgross.jpg" alt="" loading="lazy">
+            <img src="./images/pexels-image-hunter.jpg" alt="" loading="lazy">
+            <img src="./images/pexels-mrdbstig.jpg" alt="" loading="lazy">
+            <figcaption>
+                <p>Imagens do pexels.com</p>
+            </figcaption>
+        </figure>
+    </main>
+
+    <!-- Rodapé - footer -->
+    <footer>
+        <h3>rodapé</h3>
+        <p><strong>FIAP</strong></p>
+        <p><em>Todos os direitos reservados</em></p>
+        <p>
+        <address>Av. Lins de Vasconcelos, 1264 - São Paulo</address>
         </p>
-        <a href="https://www.harley-davidson.com/" target="_blank" class="btn">Visite o site</a>
-    </div>
+    </footer>
+
 </body>
+
 </html>
