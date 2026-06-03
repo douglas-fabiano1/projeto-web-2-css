@@ -3,7 +3,6 @@
     box-sizing: 0;
     box-sizing: border-box;
 }
-
 :root {
     --font-body: Quicksand, sans-serif;
     --color-light: #fcfcfc;
@@ -12,18 +11,15 @@
     --color-blue-600: #4f518c;
     --color-blue-900: #2c2a4a;
 }
-
 body {
     font-family: var(--font-body, monospace);
     background-color: var(--color-blue-900);
     text-align: center;
     color: var(--color-light);
 }
-
 h2 {
     margin-top: 20px;
 }
-
 .container {
     width: 600px;
     margin: 30px auto;
@@ -31,7 +27,6 @@ h2 {
     padding: 10px 0;
     border: 1px solid var(--color-light);
 }
-
 .box {
     width: 140px;
     height: 70px;
@@ -41,18 +36,17 @@ h2 {
     font-size: 1.4rem;
     align-content: center;
 }
-
 .box-um {
-    background-color: var(--color-blue-200);
-    position: static;
+     background-color: var(--color-blue-200);
+     position: static;
 }
-
 .box-dois {
-    background-color: var(--color-blue-400);
-    position: static;
+     background-color: var(--color-blue-400);
+     position: relative;
+     left: 100px;
 }
-
 .box-tres {
-    background-color: var(--color-blue-600);
-    position: static;
+     background-color: var(--color-blue-600);
+     position: relative;
+     left: 200px;
 }
