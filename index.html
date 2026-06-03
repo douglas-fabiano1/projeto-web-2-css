@@ -1,25 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position Static</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <!-- chamada do CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Tabelas</title>
 </head>
 
 <body>
-    <h2>Seu Projeto Web - Position Static</h2>
-    <main class="container">
-        <section class="box box-um">1</section>
-        <section class="box box-dois">2</section>
-        <section class="box box-tres">3</section>
-    </main>
+    <h1>Tabelas com HTML</h1>
+
+    <!-- Uso tabela apenas para exibir informações -->
+    <table>
+        <caption>Dados do Usuário</caption> <!--Título da tabela-->
+        <thead> <!--Cabeçalho da tabela-->
+            <tr> <!-- Linha das colunas da tabela -->
+                <th>Id</th> <!-- th - coluna-->
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Tipo de Conta</th>
+                <th>Data do Cadastro</th>
+            </tr>
+        </thead>
+        <tbody> <!--Corpo da tabela-->
+            <tr> <!-- Linha 1 -->
+                <td>00001</td> <!-- Valores - Id | Nome | E-mail | Tipo de Conta | Data do Cadastro -->
+                <td>Goku</td>
+                <td>goku@gmail.com</td>
+                <td>Premium</td>
+                <td>01/01/1981</td>
+            </tr>
+            <tr> <!-- Linha 2 -->
+                <td>00002</td> <!-- Valores -->
+                <td>Gohan</td>
+                <td>gohan@gmail.com</td>
+                <td>Free</td>
+                <td>01/01/1999</td>
+            </tr>
+            <tr> <!-- Linha 3 -->
+                <td>00003</td> <!-- Valores - Id | Nome | E-mail | Tipo de Conta | Data do Cadastro -->
+                <td>Sushico</td>
+                <td>sushico@gmail.com</td>
+                <td>Premium</td>
+                <td>01/12/1983</td>
+            </tr>
+            <tr> <!-- Linha 4 -->
+                <td>00004</td> <!-- Valores -->
+                <td>Bydeo</td>
+                <td>bydeo@gmail.com</td>
+                <td>Free</td>
+                <td>21/08/2000</td>
+            </tr>
+            <tr> <!-- Linha 5 -->
+                <td>00005</td> <!-- Valores - Id | Nome | E-mail | Tipo de Conta | Data do Cadastro -->
+                <td>Saulo</td>
+                <td>saulo@gmail.com</td>
+                <td>Free</td>
+                <td>16/06/1960</td>
+            </tr>
+            <tr> <!-- Linha 6 -->
+                <td>00008</td> <!-- Valores -->
+                <td>Narute</td>
+                <td>narute@gmail.com</td>
+                <td>Premium</td>
+                <td>23/07/2012</td>
+            </tr>
+            <tr> <!-- Linha 7 -->
+                <td>00010</td> <!-- Valores - Id | Nome | E-mail | Tipo de Conta | Data do Cadastro -->
+                <td>Renato</td>
+                <td>renato@gmail.com</td>
+                <td>Free</td>
+                <td>15/06/1968</td>
+            </tr>
+            <tr> <!-- Linha 8 -->
+                <td>00011</td> <!-- Valores -->
+                <td>Paulo</td>
+                <td>paulo@gmail.com</td>
+                <td>Premium</td>
+                <td>07/05/1985</td>
+            </tr>
+            <tr> <!-- Linha 9 -->
+                <td>00011</td> <!-- Valores - Id | Nome | E-mail | Tipo de Conta | Data do Cadastro -->
+                <td>Eliane</td>
+                <td>eliane@gmail.com</td>
+                <td>Free</td>
+                <td>16/03/1998</td>
+            </tr>
+            <tr> <!-- Linha 10 -->
+                <td>00012</td> <!-- Valores -->
+                <td>Lucas</td>
+                <td>lucas@gmail.com</td>
+                <td>Premium</td>
+                <td>18/09/2003</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- Rodapé não é obrigatório, posso encontrar tabelas sem ele -->
+            <tr>
+                <td colspan="5">Todos os direitos reservados</td> <!-- colspan mescla colunas -->
+            </tr>
+        </tfoot>
+
+    </table>
 </body>
 
 </html>
