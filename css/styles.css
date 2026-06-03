@@ -20,10 +20,6 @@ body {
     color: var(--color-light);
 }
 
-h2 {
-    margin-top: 20px;
-}
-
 .container {
     width: 600px;
     margin: 30px auto;
@@ -49,12 +45,16 @@ h2 {
 
 .box-dois {
     background-color: var(--color-blue-400);
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    position: static;
 }
 
 .box-tres {
     background-color: var(--color-blue-600);
     position: static;
+}
+
+h2 {
+    position: fixed;
+    top: 150px;
+    right: 30px;
 }
